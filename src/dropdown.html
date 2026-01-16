@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        width: 100%;
+        overflow: auto;
+        background-color: white;
+        font-family: "Work Sans", sans-serif;
+        justify-content: center;
+        align-items: center;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-toggle {
+        padding: 1vw;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        background-color: #fff;
+        display: inline-block;
+      }
+
+      .dropdown-checkbox {
+        display: none;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: fixed;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        min-width: 15vw;
+        max-height: 15vh;
+        overflow: auto;
+        padding: 1vw;
+        -webkit-overflow-scrolling: touch;
+      }
+      .Apply {
+        position: fixed;
+        margin-bottom: 1vh;
+        padding: 1vw;
+      }
+      /* Show dropdown content when checkbox is checked */
+      .dropdown-checkbox:checked ~ .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-content label {
+        display: block;
+        margin-bottom: 1vh;
+      }
+      .dropdown_button {
+        font-size: 1em;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        margin-top: 1vw;
+        background-color: black;
+        border-radius: 8px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <input type="checkbox" id="dropdown-checkbox" class="dropdown-checkbox" />
+
+      <label for="dropdown-checkbox" class="dropdown-toggle"
+        >Select Options <i class="fa fa-chevron-down dropdown-icon"></i
+      ></label>
+
+      <div class="dropdown-content">
+        <label><input type="checkbox" name="option1" /> Option 1</label>
+        <label><input type="checkbox" name="option2" /> Option 2</label>
+        <label><input type="checkbox" name="option3" /> Option 3</label>
+        <label><input type="checkbox" name="option4" /> Option 4</label>
+        <label><input type="checkbox" name="option5" /> Option 5</label>
+        <label><input type="checkbox" name="option6" /> Option 6</label>
+        <label><input type="checkbox" name="option7" /> Option 7</label>
+        <label><button class="dropdown_button">Apply</button></label>
+      </div>
+    </div>
+  </body>
+</html>

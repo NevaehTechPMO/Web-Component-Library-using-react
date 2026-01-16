@@ -1,0 +1,27 @@
+.card {
+  background: #fff;
+  border: 2px solid rgb(200, 200, 200);
+  padding-top: 1vh;
+  border-radius: 12px;
+  box-shadow: 2px 3px 4px rgb(204, 204, 204);
+  padding-left: 1vw;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  width: var(--card-width, 20vw);
+  height: 18vh;
+}
+.big_text {
+  font-weight: bolder;
+  font-size: xx-large;
+}
+.big_text img {
+  margin-right: 0.9vw;
+}
+.other-text {
+  font-size: medium;
+  margin-left: 4.5vw;
+}
+.amount {
+  margin-left: 4.5vw;
+  font-size: 14px;
+}
